@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <script>
+        function ChangeName(){
+
+            document.getElementById("heading").innerHTML="new heading";
+        }
+        function ShowAlert() {
+            window.alert("it is an alert window")
+
+        }
+        function getInput() {
+            var name=document.forms["myForm"]["name"].value;
+            window.alert(name);
+
+        }
+        function buttonClicked(num) {
+             window.alert(num);
+        }
+
+
+    </script>
+
+</head>
+<body>
+  <form action="#" name="myForm">
+      <input type="text" id="name" >
+      <button onclick="buttonClicked(1)">1</button>
+      <button onclick="buttonClicked(2)">2</button>
+
+
+  </form>
+</body>
+</html>
